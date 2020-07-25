@@ -1,0 +1,38 @@
+[
+{
+    "equity":"Axis Multicap Fund - Direct Plan - Dividend",
+    "nav":"11.25",
+    "Invamount":"500",
+    "fromDate":"25-Jul-2020",
+    "toDate":"25-Jul-2020",
+    "unit":""
+
+},
+{
+    "equity":"Axis Multicap Fund - Direct Plan - Growth",
+    "nav":"24.25",
+    "Invamount":"500",
+    "fromDate":"25-Jul-2020",
+    "toDate":"25-Jul-2020",
+    "unit":""
+
+},  
+{
+    "equity":"Axis Multicap Fund - Regular Plan - Dividend",
+    "nav":"34.56",
+    "Invamount":"1,000",
+    "fromDate":"25-Jul-2020",
+    "toDate":"25-Jul-2020",
+    "unit":""
+   
+},  
+{
+
+    "equity":"Axis Multicap Fund - Regular Plan - Growth",
+    "nav":"23.25",
+    "Invamount":"1,000",
+    "fromDate":"25-Jul-2020",
+    "toDate":"25-Jul-2020",
+    "unit":""
+} 
+]

@@ -1,0 +1,133 @@
+<div class="container-fuild">
+  <div class="row">
+    <img class="col-lg-12" alt="" src="./assets/blog-cover-banner.jpg">
+  </div>
+</div>
+<div class="container">
+  <div class="kt-portlet kt-portlet--last kt-portlet--head-lg kt-portlet--responsive-mobile" id="kt_page_portlet">
+    <h2 class="kt-portlet__head-title">Axis Mutual Fund Categories</h2>    
+  <div class="row">        
+    <div class="kt-portlet__body col-sm-4 col-md-4" *ngFor="let AxisFunds of AxisFund" >
+        <a>
+          <img href="#trandingfund" class="me-img" src="/assets/download.jpeg" alt="">
+        </a>
+          <h5 class="title">
+            <a href="#trandingfund">
+              {{AxisFunds.fundName}}
+            </a>
+          </h5>
+        </div>
+    </div>
+<!-- User Detils Forms -->
+
+<div class="row" id="fundform">
+  <div class="col-lg-12">	  
+    <div class="kt-portlet kt-portlet--last kt-portlet--head-lg kt-portlet--responsive-mobile" id="kt_page_portlet">
+      <div class="kt-portlet__head kt-portlet__head--lg">
+          <div class="kt-portlet__head-label">
+            <a routerLink="/">
+              <img class="rounded mx-auto d-block" alt="" src="./assets/axis1.jpg">                  
+          </a>
+          </div>   
+      </div>  
+  <form class="form" [formGroup]="fundForm" (ngSubmit)="onSubmit()">
+    <div class="form-group row">
+      <label  class="col-4 col-form-label" for="name">Full Name:</label>
+      <div class="col-8">
+      <input type="text" class="form-control" id="name" placeholder="Enter Name" formControlName="name">
+    </div>
+    </div>
+    <div class="form-group row">
+      <label class="col-4 col-form-label" for="dob">Date Of Birth:</label>
+      <div class="col-8">
+      <input type="date" class="form-control" id="dob" placeholder="Enter bod" formControlName="dob">
+    </div>
+    </div>
+    <div class="form-group row">
+        <label class="col-4 col-form-label" for="Fund">Fund:</label>
+        <div class="col-8">
+            <select id="fund" formControlName="fund">
+              <option *ngFor= "let AxisFunds of AxisFund" value="{{AxisFunds.fundName}}">{{AxisFunds.fundName}}</option>
+            </select>
+        </div>
+      </div> 
+      <div class="form-group row" id="EquityScheme">
+        <label class="col-4 col-form-label" for="Fund">Equity Scheme:</label>
+        <div class="col-8">
+            <select  id="equity" formControlName="equity">
+              <option *ngFor= "let Funds of Fund"value="{{Funds.subfundName}}">{{Funds.subfundName}}</option>
+            </select>
+        </div>
+      </div>
+    <div class="form-group row">
+      <label  class="col-4 col-form-label" for="Invamount">Investmemt Amount:</label>
+      <div class="col-8">
+      <input type="text" class="form-control" id="Invamount" placeholder="Enter amount" formControlName="Invamount">
+    </div>
+    </div>
+    <div class="form-group row">
+      <label class="col-4 col-form-label" for="fromdate">From Date:</label>
+      <div class="col-8">
+      <input type="date" class="form-control" id="date" placeholder="Enter Date" formControlName="fromDate">
+    </div>
+    </div>
+    <div class="form-group row">
+        <label class="col-4 col-form-label" for="todate">TO Date:</label>
+        <div class="col-8">
+        <input type="date" class="form-control" id="date" placeholder="Enter Date" formControlName="toDate">
+    </div>
+      </div>  
+      <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</div>
+</div>
+</div>
+</div>
+
+ <!-- tranding axis Mutual Fund -->
+ <div class="container" id="trandingfund">
+  <h2 class="kt-portlet__head-title">Tranding Axis Mutual Fund</h2>
+ <div class="row">
+ <div class="col-sm-6 col-md-4" *ngFor="let Fundschema of schema">
+ <div class="card text-center">
+ 
+ <div class="card-body">
+ <h5 class="card-title">{{Fundschema.equity}}</h5>
+ <span class="card-text">An open ended equity scheme pre dominantly investing in a large cap stock</span>
+ <div style="width:100%;text-align:left;padding:10px">
+     <button type="button" class="btn btn-primary btn-sm  ml-4 ">1 year</button>
+     
+     <button type="button" class="btn btn-outline-secondary btn-sm ml-4">5 year</button>
+     <button type="button" class="btn btn-outline-secondary btn-sm ml-4">3 year</button>
+ 
+ 
+ </div>
+ 
+  <div style="width:100%;display: flex;height: 50px;margin-top:10px">
+     <div style="width:50%;text-align:center">
+         Annualised retruns
+         <p>10.57%</p>
+     </div>
+     <div style="width:50%;text-align:center">
+          bench mark retruns
+         <p>7.9%</p>
+     </div>
+ </div>
+ <p style="text-align:left;margin-top:42px;">NAV {{Fundschema.nav}} as on{{Fundschema.fromDate}}</p>
+ </div>
+ 
+ <div style="width:100%;display: flex;height: 70px;">
+ <div class="amount">
+  {{Fundschema.Invamount}}
+ </div>
+ <div class="invest">
+  <a href="#fundform" type="button" class="btn btn-primary btn-sm">Invest</a>
+ </div>
+ </div>
+ <div class="card-footer">
+ CHECK DETAILS PERFORMANCE
+ </div>
+ </div>
+ </div>
+ </div>
+<router-outlet></router-outlet>

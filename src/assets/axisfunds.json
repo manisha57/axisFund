@@ -1,0 +1,21 @@
+ [
+
+    {
+      "fundName": "Equity Scheme"
+    },
+    {
+        "fundName": "Debt Scheme"
+    },
+  
+    {
+        "fundName": "Hybrid Scheme"
+    },
+  
+    {
+        "fundName": "Solution Oriented Scheme"
+    },
+  
+    {
+        "fundName": "Other Scheme"
+    }
+  ]

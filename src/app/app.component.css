@@ -1,0 +1,108 @@
+.rounded{
+    margin: 50px;
+}
+label.col-4.col-form-label {
+    color: white;
+}
+select#fund {
+    width: 100%;
+    padding: 10px;
+}
+h2.kt-portlet__head-title {
+    padding: 25px;
+    color: aliceblue;
+    text-align: center;
+}
+a:not([href]) {
+    color: aliceblue;
+    text-decoration: none;
+    padding: inherit;
+    margin: 10px;
+}
+h5.title {
+    text-align: center;
+    padding: 15px;
+    font-weight: 900;
+}
+a#fundname {
+    color: aliceblue;
+}
+h3.kt-portlet__head-title {
+    text-align: center;
+    margin: 30px;
+    padding: 10px;
+    color: aliceblue;
+}
+
+
+.card{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+transition: 0.3s;
+}
+.amount{
+   width:50%;
+   border: 2px dotted #bbbaba;
+border-bottom: none;
+border-left: none;
+font-weight: bold;
+padding: 20px;
+font-size: 20px;
+}
+.invest{
+     width:50%;
+   border-top: 2px dotted #bbbaba;
+   font-weight: bold;
+padding: 20px;
+font-size: 20px;
+/*border-left: none;*/
+}
+.card-footer{
+   color:#cc0444;
+   font-weight: bold;
+}
+
+.card{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+transition: 0.3s;
+}
+.amount{
+   width:50%;
+   border: 2px dotted #bbbaba;
+border-bottom: none;
+border-left: none;
+font-weight: bold;
+padding: 20px;
+font-size: 20px;
+}
+.invest{
+     width:50%;
+   border-top: 2px dotted #bbbaba;
+   font-weight: bold;
+padding: 20px;
+font-size: 20px;
+/*border-left: none;*/
+}
+.card-footer{
+   color:#cc0444;
+   font-weight: bold;
+}
+h5.card-title {
+    color: #b33749;
+    font-weight: 900;
+}
+.col-sm-6.col-md-4 {
+    padding: 10px;
+}
+.ml-4 {
+    margin-left: 0.5rem !important;
+}
+@media all and (min-width: 570px) and (max-width: 1000px) {
+    .col-sm-6.col-md-4 {
+        flex: 0 0 48%;
+        max-width: fit-content;
+    }
+}
+select#equity {
+    padding: 10px;
+    width: inherit;
+}
